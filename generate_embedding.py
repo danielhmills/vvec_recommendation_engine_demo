@@ -10,7 +10,7 @@ tokenizer = BertTokenizer.from_pretrained(model_name)
 model = BertModel.from_pretrained(model_name)
 
 # Namespace for embeddings in RDF
-VEC_NS = Namespace("https://www.openlinksw.com/ontology/vvec#")
+VEC_NS = Namespace("http://www.openlinksw.com/ontology/vvec#")
 
 def generate_bert_embedding(text):
     # Tokenize and convert to tensors
